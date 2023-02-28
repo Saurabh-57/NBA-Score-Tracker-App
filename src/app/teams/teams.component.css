@@ -1,18 +1,29 @@
 .form-select{
-    width: 30%;
+    width:30%;
+    height:30px;
 }
 
 img {
-    width: 87px;
+    width: 95px;
+
+}
+
+#border {
+    border: solid;
+    column-rule-style: groove;
+    width: 280px;
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 .close{
-    position: absolute;
-    top: 2px;
-    right: 7px;
+    position: relative;
+    top: -47px;
+    left: 245px;
 }
 option {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .dot {
@@ -30,4 +41,23 @@ option {
 }
 .card{
     margin-top: 8px;
+    width: 250px;
+      
+}
+.main{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+.imgLAL{
+    width: 100px;
+    
+}
+#trackbtn{
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 30px;
+}
+.cardHeaderName{
+    font-size: 20px;
 }

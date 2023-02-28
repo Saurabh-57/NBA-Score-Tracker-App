@@ -7,8 +7,8 @@ interface Results {
     data: Results;
     date: string;
     home_team: {
-        id: number, abbreviation: string, city: string, conference: string, division: string, full_name: string,
-        name: string
+    id: number, abbreviation: string, city: string, conference: string, division: string, full_name: string,
+    name: string
     }
     home_team_score: number;
     id: number;
@@ -18,8 +18,8 @@ interface Results {
     status: string;
     time: string;
     visitor_team: {
-        id: number, abbreviation: string, city: string, conference: string, division: string, full_name: string,
-        name: string
+    id: number, abbreviation: string, city: string, conference: string, division: string, full_name: string,
+    name: string
     }
     visitor_team_score: number;
 }

@@ -1,3 +1,4 @@
+<div class="main">
 <div class="container-fluid drop" >
     <form>
         <div>
@@ -5,23 +6,28 @@
                 <option *ngFor="let item of teams" [value]="item?.id">{{item?.full_name}}</option>
             </select>
     
-            <button type="button" class="btn btn-primary" (click)="track()">Track team</button>
+            <button type="button" class="btn btn-primary" id = "trackbtn" (click)="track()">Track team</button>
         </div>
 
     </form>
-    
-
+   
+  
     <ng-container *ngIf="teamsSelected?.length > 0">
-        <div class="row">
+        <div  class="row">           
             <div class="col-3" *ngFor="let item of teamsSelected ; let index=index;">
-                <div class="card">
+                <div class="card" id="border">
                     <div class="card-header">
-                        <div>{{headerInfo[index]?.full_name}} [{{headerInfo[index]?.abbreviation}}]</div>
+                        <div class="cardHeaderNAme">{{headerInfo[index]?.full_name}} [{{headerInfo[index]?.abbreviation}}]</div>
+
+                        
                         <div>{{headerInfo[index]?.conference}}ern conference</div>
-                        <button type="button" class="close" aria-label="Close" (click)="delete(index)">
+                        <button 
+                             id="remove{team}"  type="button" class="close" aria-label="Close" (click)="delete(index)"> 
+                
                             <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
+                        </button>            
+                       
+                         </div>
                     <div class="card-body">
                         <div class="row">
                             <div class="col-8">
@@ -33,12 +39,11 @@
                                 </ng-container>
                                 <div>Avg pts scored: {{getAverage(item, 'home_team_score')}}</div>
                                 <div>Avg pts conceded: {{getAverage(item, 'visitor_team_score')}}</div>
-
-                            </div>
+                                </div>
                             <div class="col-4">
-                                <img src='{{ "assets/images/" + headerInfo[index]?.abbreviation + ".png" }}'
+                                <img  class="imgLAL" src='{{ "assets/images/" + headerInfo[index]?.abbreviation + ".png" }}'
                                     alt="logo" />
-                            </div>
+                             </div>
                         </div>
                     </div>
                     
@@ -48,6 +53,8 @@
                 </div>
             </div>
         </div>
+    
 
     </ng-container>
+</div>
 </div>

@@ -12,3 +12,9 @@ ul {
 button{
     margin-top: 10px;
 }
+#border2{
+    border: solid;
+    width: 280px;
+    text-align: center;
+    margin-left: 330px;
+}

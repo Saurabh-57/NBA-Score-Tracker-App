@@ -19,7 +19,7 @@ export class ResultsComponent implements OnInit {
      private activatedRoute: ActivatedRoute, 
      private router: Router) {
       this.activatedRoute.params.subscribe((data: Params) => {
-        this.teamCode  = data['teamCode'];
+      this.teamCode  = data['teamCode'];
       })
    }
 
